@@ -1,0 +1,19 @@
+.transition-properties(...) {
+	-webkit-transition: @arguments;
+	-moz-transition: @arguments;
+	-o-transition: @arguments;
+	transition: @arguments;
+}
+.font(@font-weight,@font-size,@font-family,@color,@text-transform){
+	font-weight: @font-weight;
+	font-size: @font-size;
+	font-family: @font-family;
+	color: @color;
+	text-transform: @text-transform;
+}
+*{
+	box-sizing: border-box;
+}
+&::after,&::before{
+	box-sizing: border-box;
+}

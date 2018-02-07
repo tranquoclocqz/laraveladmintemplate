@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+   <head>
+
+      <title>jQuery.mmenu playground</title>
+      <meta charset="utf-8" />
+      <link type="text/css" href="layout.css" rel="stylesheet" />
+		<script
+  src="http://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+      <!-- Include jQuery.mmenu .css files -->
+      <link type="text/css" href="jquery.mmenu.all.css" rel="stylesheet" />
+
+      <!-- Include jQuery and the jQuery.mmenu .js files -->
+      <script type="text/javascript" src="jquery.mmenu.all.js"></script>
+
+      <!-- Fire the plugin onDocumentReady -->
+      <script type="text/javascript">
+         jQuery(document).ready(function( $ ) {
+            $("#menu").mmenu();
+         });
+      </script>
+
+   </head>
+   <body>
+
+      <!-- The page -->
+      <div class="page">
+         <div class="header">
+            <a href="#menu">clickme</a>
+            Demo
+         </div>
+         <div class="content">
+            <p><strong>This is a demo.</strong><br />
+               Click the menu icon to open the menu.</p>
+         </div>
+      </div>
+
+      <!-- The menu -->
+      <nav id="menu">
+         <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About us</a>
+               <ul>
+                  <li><a href="/about/history">History</a></li>
+                  <li><a href="/about/team">The team</a></li>
+                  <li><a href="/about/address">Our address</a></li>
+               </ul>
+            </li>
+            <li><a href="/contact">Contact</a></li>
+         </ul>
+      </nav>
+
+   </body>
+</html>
